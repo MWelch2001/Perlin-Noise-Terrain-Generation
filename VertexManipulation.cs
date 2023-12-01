@@ -20,7 +20,6 @@ public class VertexManipulation : MonoBehaviour
     [SerializeField]
     public MeshFilter meshFilter;
 
-    // Start is called before the first frame update
     void Start()
     {
         Vector3[] meshVertices = this.meshFilter.mesh.vertices;
@@ -38,7 +37,6 @@ public class VertexManipulation : MonoBehaviour
         generateMap(tileDepth, tileWidth);
     }
 
-    // Update is called once per frame
    void generateMap(int depth, int width)
     {
         float xOffset = -gameObject.transform.position.x / transform.localScale.x;
