@@ -11,7 +11,6 @@ public class SphereMove : MonoBehaviour
     Transform currentTile;
     float speed = 0.1f;
     int tileOffset;
-    // Start is called before the first frame update
     void Start()
     {
         tilePrefab = Resources.Load<Transform>("Prefabs/tile");
@@ -19,7 +18,6 @@ public class SphereMove : MonoBehaviour
         spawnTile();
     }
 
-    // Update is called once per frame
     void Update()
     {
         playerInput.x = Input.GetAxis("Horizontal");
