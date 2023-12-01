@@ -22,6 +22,4 @@ public class NoiseMapGen : MonoBehaviour
         }
         return noiseMap;
     }
-
-    // Start is called before the first frame update
 }
